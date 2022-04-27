@@ -21,14 +21,14 @@ const Result = () => {
     <Wrapper>
       <Header>예비집사 판별기</Header>
       <Contents>
-        <Title>결과 보기</Title>
+        <Title>결과 : {resultData.best}</Title>
         <LogoImage>
           <img src={resultData.image} className="rounded-circle" width={350} height={350} alt="고양이 로고" />
         </LogoImage>
-        <Desc className="text-primary">예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</Desc>
+        <Desc>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다. <br/> {resultData.desc}</Desc>
         <ButtonGroup>
           <Button style={{ fontFamily: "SimKyungha" }} onClick={() => navigate('/')}>테스트 다시하기</Button>
-          <KakaoShareButton />
+          <KakaoShareButton data = {resultData} />
         </ButtonGroup>
       </Contents>
     </Wrapper >
