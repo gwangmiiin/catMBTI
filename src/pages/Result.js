@@ -24,7 +24,7 @@ const Result = () => {
            <Contnents>
              <Title >결과 : {resultdata.best}</Title>
              <LogoImage>
-               <img src={resultdata.image}  className = "rounded-circle" width={350} height={350}/>
+               <img src={resultdata.image} alt = "고양이이미지"  className = "rounded-circle" width={350} height={350}/>
              </LogoImage>
              <Desc>예비 집사님과 찰떡궁합인 고양이는 {resultdata.name}입니다. <br/> {resultdata.desc}</Desc>
              <Button style={{fontFamily : 'SimKyungha'}} onClick = {() => navigate('/')}>테스트 다시하기</Button>

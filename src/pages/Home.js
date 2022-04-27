@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 //css-in-js
 import styled from 'styled-components'
 import CatImage from '../asset/cat_image.jpg'
@@ -18,7 +18,7 @@ const Home = () => {
             <Contnents>
               <Title >나에게 맞는 주인님은?</Title>
               <LogoImage>
-                <img src={CatImage}  className = "rounded-circle" width={350} height={350}/>
+                <img src={CatImage} alt = "고양이이미지"  className = "rounded-circle" width={350} height={350}/>
               </LogoImage>
               <Desc>MBTI를 기반으로 하는 나랑 잘맞는 고양이 찾기!</Desc>
               <Button style={{fontFamily : 'SimKyungha'}} onClick={handleClickButton}>테스트 시작하기</Button>
